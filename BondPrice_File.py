@@ -10,4 +10,5 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
     bondPrice += face * (1 + r) ** -n
     return(bondPrice)
 
-
+price1 = getBondPrice (y, face, couponRate, m, ppy=1)
+price2 = getBondPrice (y, face, couponRate, m, ppy=2)
