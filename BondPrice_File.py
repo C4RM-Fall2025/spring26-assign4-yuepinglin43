@@ -8,6 +8,7 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
         pvm = (1 + r) ** -t
         bondPrice += pvm * coupon
     bondPrice += face * (1 + r) ** -n
+    bondPrice = round(bondPrice)
     return(bondPrice)
 
 y = 0.03
@@ -15,5 +16,5 @@ face = 2000000
 couponRate = 0.04
 m = 10
 
-print(f"{getBondPrice (y, face, couponRate, m, ppy=1):.2f}")
-print(f"{getBondPrice (y, face, couponRate, m, ppy=2):.2f}")
+print(getBondPrice (y, face, couponRate, m, ppy=1))
+print(getBondPrice (y, face, couponRate, m, ppy=2))
