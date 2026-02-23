@@ -1,6 +1,6 @@
 def FizzBuzz(start, finish):
     outlist = []
-    for i in range(start, finish + 1):
+    for i in range(start, finish):
         if i % 15 == 0:
             outlist.append("fizzbuzz")
         elif i % 3 == 0:
