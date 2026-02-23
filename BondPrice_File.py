@@ -10,5 +10,12 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
     bondPrice += face * (1 + r) ** -n
     return(bondPrice)
 
+y = 0.03
+face = 2000000
+couponRate = 0.04
+m = 10
+
 price1 = getBondPrice (y, face, couponRate, m, ppy=1)
 price2 = getBondPrice (y, face, couponRate, m, ppy=2)
+print(f"{price1:.2f}")
+print(f"{price2:.2f}")
