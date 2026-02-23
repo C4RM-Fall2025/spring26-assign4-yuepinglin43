@@ -11,9 +11,7 @@ def getBondPrice_E(face, couponRate, yc):
     return(bondPrice)
 
 
-# Test values
-
 yc = [.010,.015,.020,.025,.030]
 face = 2000000
 couponRate = .04
-print(getBondPrice_E(face, couponRate, yc))
+getBondPrice_E(face, couponRate, yc)
