@@ -15,5 +15,5 @@ face = 2000000
 couponRate = 0.04
 m = 10
 
-print(getBondPrice (y, face, couponRate, m, ppy=1))
-print(getBondPrice (y, face, couponRate, m, ppy=2))
+print(f"{getBondPrice (y, face, couponRate, m, ppy=1):.2f}")
+print(f"{getBondPrice (y, face, couponRate, m, ppy=2):.2f}")
