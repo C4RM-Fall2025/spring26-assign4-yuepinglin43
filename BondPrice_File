@@ -18,5 +18,3 @@ m = 10
 ppy = 1
 ppy = 2
 
-getBondPrice (y, face, couponRate, m, ppy=1)
-getBondPrice (y, face, couponRate, m, ppy=2)
