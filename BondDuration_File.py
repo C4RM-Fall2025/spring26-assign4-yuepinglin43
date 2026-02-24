@@ -22,5 +22,3 @@ face = 2000000
 couponRate = 0.04
 m = 10
 ppy = 1
-duration = getBondDuration(y, face, couponRate, m, ppy = 1)
-print(duration)
