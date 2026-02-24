@@ -2,7 +2,7 @@ def getBondPrice_E(face, couponRate, yc):
     bondPrice = 0
     coupon = face * couponRate
     for t, y in enumerate(yc, start=1):
-        if t % 5 == 0:
+        if t == len(yc):
             cf = face + coupon
         else:
             cf = coupon
@@ -10,8 +10,3 @@ def getBondPrice_E(face, couponRate, yc):
         bondPrice += cf * pvm
     return(bondPrice)
 
-
-yc = [.010,.015,.020,.025,.030]
-face = 2000000
-couponRate = .04
-getBondPrice_E(face, couponRate, yc)
