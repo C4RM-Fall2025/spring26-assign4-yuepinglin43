@@ -10,11 +10,9 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
     bondPrice += face * (1 + r) ** -n
     bondPrice = round(bondPrice)
     return(bondPrice)
-
 y = 0.03
 face = 2000000
 couponRate = 0.04
 m = 10
-
-print(getBondPrice (y, face, couponRate, m, ppy=1))
-print(getBondPrice (y, face, couponRate, m, ppy=2))
+ppy = 1
+ppy = 2
